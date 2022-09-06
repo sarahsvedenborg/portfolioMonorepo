@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "portfolio-monorepo",
+    "workspaces": [
+        "portfolio",
+        "studio",
+        "ui"
+    ],
+    "scripts": {
+        "dev:portfolio": "cd portfolio && yarn dev",
+        "dev:studio": "cd studio && sanity start",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@portabletext/react": "^1.0.3",
+        "@sanity/image-url": "^1.0.1",
+        "next-sanity": "^0.5.0",
+        "react-icons": "^4.3.1"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.12.1",
+        "@typescript-eslint/parser": "^5.12.1",
+        "eslint": "^8.9.0",
+        "eslint-config-prettier": "^8.4.0",
+        "eslint-plugin-react": "^7.28.0"
+    }
+}
